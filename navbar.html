@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+<style>
+section{
+    height: 100vh;
+    background-color: #3fcbd2;
+    padding-top: 70px;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+</style>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar">
+            <div class="container">
+                <h1>Título do site</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse" id="menu">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#promocoes">Promoções</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+ <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <section id="inicio">
+        <h2>Início</h2>
+    </section>
+    <section id="produtos">
+        <h2>Produtos</h2>
+    </section>
+    <section id="promocoes">
+        <h2>Promoções</h2>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+    </section>
+ </div>
+    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
